@@ -1,0 +1,15 @@
+<div class="navbar">
+  <h2>New restaurant</h2>
+  <%= link_to "Go back to list", restaurants_path, class: "nav-link" %>
+</div>
+
+<div class="form">
+  <%= simple_form_for(@restaurant) do |f| %>
+    <%= f.input :name %>
+    <%= f.input :address %>
+    <%= f.input :category %>
+    <%= f.input :phone_number %>
+    <%= f.submit %>
+  <% end %>
+</div>
+

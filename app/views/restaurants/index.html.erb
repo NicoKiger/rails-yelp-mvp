@@ -1,0 +1,20 @@
+<div class="navbar">
+  <h1>My favorite restaurants !</h1>
+  <%= link_to "New restaurant", new_restaurant_path, class: "nav-link" %>
+</div>
+
+  <div class="card">
+    <div class="container">
+      <ul>
+      <% @restaurants.each do |restaurant| %>
+        <li><%= link_to restaurant.name, restaurant_path(restaurant) %></li>
+      <% end %>
+      </ul>
+    </div>
+  </div>
+
+
+
+
+
+
